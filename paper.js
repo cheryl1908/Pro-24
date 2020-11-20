@@ -22,7 +22,7 @@ class Paper {
       stroke("purple");
       fill("purple");
       ellipseMode(RADIUS);
-      ellipse(pos.x,pos.y,20,20);
+      ellipse(pos.x=0,pos.y=0,20,20);
       pop();
     }
   };
