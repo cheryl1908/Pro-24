@@ -4,8 +4,6 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
-function preload(){}
-
 function setup() {
 	createCanvas(900, 700);
 
@@ -25,7 +23,7 @@ function setup() {
 
 
 function draw() {
-  background(0);
+  background(255);
 
   paper.display();
   groundObj.display();
@@ -37,7 +35,7 @@ function draw() {
 }
 function keyPressed(){
 	if (keyCode === DOWN_ARROW) {
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:85,y:-85});
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:10,y:-45});
 	  }
 }
 

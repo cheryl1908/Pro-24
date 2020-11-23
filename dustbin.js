@@ -6,7 +6,7 @@ class Dustbin {
       this.body1= Bodies.rectangle(x, y, width, height, options);
       this.width = width;
       this.height = height;
-      
+      this.image = loadImage("images/dustbingreen(1).png")
       World.add(world, this.body1);
     }
     display(){
@@ -17,7 +17,7 @@ class Dustbin {
       strokeWeight(4);
       stroke("brown");
       fill(255);
-      rect(0, 0, this.width, this.height);
+     // rect(0, 0, this.width, this.height);
       pop();
     }
   }
